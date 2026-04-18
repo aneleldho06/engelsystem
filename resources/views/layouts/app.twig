@@ -11,7 +11,7 @@
         <link rel="icon" href="{{ asset('assets/angel.svg') }}"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/theme' ~ themeId ~ '.css') }}"/>
-        <link rel="stylesheet" href="/custom.css">
+        <link rel="stylesheet" href="{{ asset('custom.css') }}">
         <script src="{{ asset('assets/vendor.js') }}"></script>
 
         {% if page() in ['news', 'meetings'] and is_user() and can('atom') -%}
